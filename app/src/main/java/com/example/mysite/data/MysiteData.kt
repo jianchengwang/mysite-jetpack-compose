@@ -1,0 +1,135 @@
+package com.example.mysite.data
+
+import androidx.compose.runtime.Immutable
+
+
+@Immutable
+data class Girl(
+    val name: String,
+    val avatar: String,
+    val from: String,
+    val description: String
+)
+
+val girls: List<Girl> = listOf(
+    Girl(
+        "大污霞",
+        "https://blog.res.jianchengwang.info/girls/dawuxia.jpg",
+        "遥远的21世纪",
+        "宇宙超级无敌女流氓!!"
+    ),
+    Girl(
+        "香香大佬",
+        "https://blog.res.jianchengwang.info/girls/xiangxiang.jpg",
+        "遥远的21世纪",
+        "冰箱上的女人!!"
+    ),
+    Girl(
+        "陆老大",
+        "https://blog.res.jianchengwang.info/girls/lulaoda.jpg",
+        "遗失过去某个时空",
+        "毕竟初恋!!"
+    ),
+    Girl(
+        "御坂美琴",
+        "https://blog.res.jianchengwang.info/girls/yubanmeiqin.png",
+        "某科学的超电磁炮",
+        "电他!!"
+    ),
+    Girl(
+        "白井黑子",
+        "https://blog.res.jianchengwang.info/girls/baijingheizi.jpg",
+        "某科学的超电磁炮",
+        "姐姐大人!!"
+    ),
+    Girl(
+        "佐天泪子",
+        "https://blog.res.jianchengwang.info/girls/zuotianleizi.jpg",
+        "某科学的超电磁炮",
+        "掀裙狂魔泪爷!!"
+    ),
+    Girl(
+        "茵蒂克丝",
+        "https://blog.res.jianchengwang.info/girls/index.jpg",
+        "魔法禁书目录",
+        "咬他!!"
+    ),
+    Girl(
+        "冯宝宝",
+        "https://blog.res.jianchengwang.info/girls/fengbaobao.jfif",
+        "一人之下",
+        "埋他!!"
+    ),
+    Girl(
+        "阿库娅",
+        "https://blog.res.jianchengwang.info/girls/aqua.png",
+        "为美好的世界献上祝福",
+        "汝，虔诚的教徒啊!!"
+    ),
+    Girl(
+        "惠惠",
+        "https://blog.res.jianchengwang.info/girls/huihui.jpg",
+        "为美好的世界献上祝福",
+        "为万恶的人设献上爆炎!!"
+    ),
+    Girl(
+        "赤瞳",
+        "https://blog.res.jianchengwang.info/girls/chitong.jfif",
+        "斩·赤红之瞳",
+        "葬送，一斩必杀!!"
+    ),
+    Girl(
+        "玛茵",
+        "https://blog.res.jianchengwang.info/girls/mayin.jpeg",
+        "斩·赤红之瞳",
+        "傲娇即是正义!!"
+    ),
+    Girl(
+        "三笠",
+        "https://blog.res.jianchengwang.info/girls/sanli.jpg",
+        "进击的巨人",
+        "刚毅且温柔的女汉子!!"
+    ),
+    Girl(
+        "祢豆子",
+        "https://blog.res.jianchengwang.info/girls/midouzi.jpg",
+        "鬼灭之刃",
+        "早....早上好!!"
+    ),
+    Girl(
+        "洛琪希",
+        "https://blog.res.jianchengwang.info/girls/luoqixi.jfif",
+        "无职转生",
+        "小师傅，萌萌哒!!"
+    ),
+    Girl(
+        "结城明日奈",
+        "https://blog.res.jianchengwang.info/girls/jiechengmingrinai.jpg",
+        "刀剑神域",
+        "做饭好手!!"
+    ),
+    Girl(
+        "桐谷直叶",
+        "https://blog.res.jianchengwang.info/girls/tongguzhiye.jpg",
+        "刀剑神域",
+        "兄控莉法桑!!"
+    ),
+    Girl(
+        "司空千落",
+        "https://blog.res.jianchengwang.info/girls/sikongqianluo.jpg",
+        "少年歌行",
+        "我以一枪入逍遥!!"
+    ),
+    Girl(
+        "石兰",
+        "https://blog.res.jianchengwang.info/girls/shilan.jfif",
+        "秦时明月",
+        "虞姬虞姬!!"
+    ),
+    Girl(
+        "白月魁",
+        "https://blog.res.jianchengwang.info/girls/baiyuekui.jfif",
+        "灵笼",
+        "白老板，YYDS!!"
+    ),
+)
