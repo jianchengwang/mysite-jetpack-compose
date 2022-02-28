@@ -18,7 +18,7 @@ import com.example.mysite.ui.components.ClipImage
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun GirlBody() {
+fun GirlScreen() {
     Column(
         Modifier.fillMaxSize(1f).padding(10.dp),
         verticalArrangement = Arrangement.Center,
