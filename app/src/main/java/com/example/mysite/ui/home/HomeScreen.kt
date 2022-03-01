@@ -13,12 +13,15 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.mysite.MysiteViewModel
 import com.example.mysite.R
 import com.example.mysite.data.siteData
 import com.example.mysite.ui.components.ClipImage
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(viewModel: MysiteViewModel) {
+    viewModel.noBottomBar = false
+    viewModel.showTopBar = false
     Column(
         modifier = Modifier
             .padding(16.dp)
@@ -57,10 +60,4 @@ fun About() {
         Text("About Site", style = MaterialTheme.typography.subtitle2, color = MaterialTheme.colors.primary)
         Text(siteData.aboutSite, style = MaterialTheme.typography.body2)
     }
-}
-
-@Preview
-@Composable
-fun PreviewHomeBody() {
-    HomeScreen()
 }

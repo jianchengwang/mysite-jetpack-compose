@@ -18,6 +18,7 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.example.mysite.MysiteViewModel
 import com.example.mysite.data.Blog
 import com.example.mysite.data.stores
 import com.example.mysite.data.techs
@@ -26,7 +27,10 @@ import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalPagerApi::class)
 @Composable
-fun BlogScreen(navController: NavHostController) {
+fun BlogScreen(navController: NavHostController, viewModel: MysiteViewModel) {
+    viewModel.noBottomBar = false
+    viewModel.showTopBar = false
+
     val tabs = listOf("Tech", "Store")
     val pagerState = rememberPagerState()
     Scaffold(
@@ -137,6 +141,7 @@ fun BlogListScreen(navController: NavHostController, blogList: ArrayList<Blog>) 
     val search = remember { mutableStateOf(TextFieldValue("")) }
     var filterList: ArrayList<Blog>
     SearchView(search)
+    Spacer(Modifier.height(4.dp))
     LazyColumn(modifier = Modifier.fillMaxHeight()) {
         val searchedText = search.value.text
         filterList = ArrayList<Blog>()

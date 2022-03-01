@@ -122,24 +122,17 @@ fun MysiteNavHost(
         modifier = modifier
     ) {
         composable(MysiteScreen.Home.name) {
-            viewModel.noBottomBar = false
-            viewModel.showTopBar = false
-            HomeScreen()
+            HomeScreen(viewModel)
         }
         composable(MysiteScreen.Blog.name) {
-            viewModel.noBottomBar = false
-            viewModel.showTopBar = false
-            BlogScreen(navController)
+            BlogScreen(navController, viewModel)
         }
         composable(
             "${MysiteScreen.Blog.name}/{title}",
             arguments = listOf(navArgument("title") { type = NavType.StringType })
         ) { backStackEntry ->
             backStackEntry.arguments?.getString("title")?.let { title ->
-                viewModel.noBottomBar = true
-                viewModel.showTopBar = true
-                viewModel.topBarTitle = title
-                BlogDetailScreen(title = title)
+                BlogDetailScreen(viewModel, title = title)
             }
         }
         composable(MysiteScreen.Book.name) {
@@ -148,9 +141,7 @@ fun MysiteNavHost(
             Text(text = "Book")
         }
         composable(MysiteScreen.Girl.name) {
-            viewModel.noBottomBar = false
-            viewModel.showTopBar = false
-            GirlScreen()
+            GirlScreen(viewModel)
             Button(onClick = {
                 context.startActivity(Intent(context, Live2dActivity::class.java))
             }) {

@@ -155,19 +155,19 @@ val girls: ArrayList<Girl> = arrayListOf(
 
 @Immutable
 data class Blog(
-    val title: String,
-    val createdAt: String,
-    val tags: List<String>,
-    val draft: Boolean = false,
-    val contentUrl: String
+    var title: String = "",
+    var createdAt: String = "",
+    var tags: List<String> = emptyList(),
+    var draft: Boolean = false,
+    var contentUrl: String = ""
 )
-
 var techs: ArrayList<Blog> = arrayListOf(
     Blog(
         "image-similarity-flask",
         "2021-10-28",
         tags = listOf("ml"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/image-similarity-flask.md"
+        contentUrl = "https://www.baidu.com"
+//                contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/image-similarity-flask.md"
     ),
     Blog(
         "hardhat-bsc-demo",
@@ -413,4 +413,11 @@ var stores: ArrayList<Blog> = arrayListOf(
         tags = listOf("武侠"),
         contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/store/大荒.md"
     ),
+)
+
+@Immutable
+data class Book(
+    var title: String = "",
+    var coverImageUrl: String = "",
+    var bookUrl: String = ""
 )

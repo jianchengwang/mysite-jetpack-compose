@@ -13,12 +13,15 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
+import com.example.mysite.MysiteViewModel
 import com.example.mysite.data.girls
 import com.example.mysite.ui.components.ClipImage
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun GirlScreen() {
+fun GirlScreen(viewModel: MysiteViewModel) {
+    viewModel.noBottomBar = false
+    viewModel.showTopBar = false
     Column(
         Modifier.fillMaxSize(1f).padding(10.dp),
         verticalArrangement = Arrangement.Center,
