@@ -159,227 +159,226 @@ data class Blog(
     var createdAt: String = "",
     var tags: List<String> = emptyList(),
     var draft: Boolean = false,
-    var contentUrl: String = ""
+    var markdownFile: String = ""
 )
 var techs: ArrayList<Blog> = arrayListOf(
     Blog(
         "image-similarity-flask",
         "2021-10-28",
         tags = listOf("ml"),
-        contentUrl = "https://www.baidu.com"
-//                contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/image-similarity-flask.md"
+        markdownFile = "image-similarity-flask.md"
     ),
     Blog(
         "hardhat-bsc-demo",
         "2021-09-29",
         tags = listOf("blockchain"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/hardhat-bsc-demo.md"
+        markdownFile = "hardhat-bsc-demo.md"
     ),
     Blog(
         "hyperledger-fabric",
         "2021-09-22",
         tags = listOf("blockchain"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/hyperledger-fabric.md"
+        markdownFile = "hyperledger-fabric.md"
     ),
     Blog(
         "window-terminal",
         "2021-06-28",
         tags = listOf("terminal"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/window-terminal.md"
+        markdownFile = "window-terminal.md"
     ),
     Blog(
         "coderunner",
         "2021-05-25",
         tags = listOf("go"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/coderunner.md"
+        markdownFile = "coderunner.md"
     ),
     Blog(
         "ext-webcomponents-vue",
         "2021-04-24",
         tags = listOf("js", "vue"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/ext-webcomponents-vue.md"
+        markdownFile = "ext-webcomponents-vue.md"
     ),
     Blog(
         "mac-m1",
         "2021-03-02",
         tags = listOf("mac"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/mac-m1.md"
+        markdownFile = "mac-m1.md"
     ),
     Blog(
         "elastic-stack",
         "2021-02-26",
         tags = listOf("elastic"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/elastic-stack.md"
+        markdownFile = "elastic-stack.md"
     ),
     Blog(
         "java-source-base",
         "2021-02-08",
         tags = listOf("java"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/java-source-base.md"
+        markdownFile = "java-source-base.md"
     ),
     Blog(
         "idea",
         "2021-02-08",
         tags = listOf("idea"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/idea.md"
+        markdownFile = "idea.md"
     ),
 
     Blog(
         "build-my-site",
         "2020-12-23",
         tags = listOf("mysite"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/build-my-site.md"
+        markdownFile = "build-my-site.md"
     ),
     Blog(
         "flask-todolist",
         "2020-11-28",
         tags = listOf("flask"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/flask-todolist.md"
+        markdownFile = "flask-todolist.md"
     ),
     Blog(
         "intro-to-serverless-functions",
         "2020-11-13",
         tags = listOf("serverless"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/intro-to-serverless-functions.md"
+        markdownFile = "intro-to-serverless-functions.md"
     ),
     Blog(
         "flink",
         "2020-11-12",
         tags = listOf("serverless"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/flink.md"
+        markdownFile = "flink.md"
     ),
     Blog(
         "live2d-web",
         "2020-10-25",
         tags = listOf("live2d"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/live2d-web.md"
+        markdownFile = "live2d-web.md"
     ),
     Blog(
         "git",
         "2020-10-09",
         tags = listOf("git"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/git.md"
+        markdownFile = "git.md"
     ),
     Blog(
         "pandas",
         "2020-10-06",
         tags = listOf("pandas"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/pandas.md"
+        markdownFile = "pandas.md"
     ),
     Blog(
         "intro-to-vue",
         "2020-09-13",
         tags = listOf("vue"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/intro-to-vue.md"
+        markdownFile = "intro-to-vue.md"
     ),
     Blog(
         "docker",
         "2020-09-10",
         tags = listOf("docker"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/docker.md"
+        markdownFile = "docker.md"
     ),
     Blog(
         "tlcl",
         "2020-07-18",
         tags = listOf("tlcl"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/tlcl.md"
+        markdownFile = "tlcl.md"
     ),
     Blog(
         "gradle",
         "2020-06-09",
         tags = listOf("gradle"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/gradle.md"
+        markdownFile = "gradle.md"
     ),
     Blog(
         "electron-vue",
         "2020-04-20",
         tags = listOf("vue"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/electron-vue.md"
+        markdownFile = "electron-vue.md"
     ),
     Blog(
         "redis",
         "2020-03-10",
         tags = listOf("redis"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/redis.md"
+        markdownFile = "redis.md"
     ),
     Blog(
         "kafka",
         "2020-02-09",
         tags = listOf("kafka"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/kafka.md"
+        markdownFile = "kafka.md"
     ),
     Blog(
         "java-thread",
         "2020-01-03",
         tags = listOf("java"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/java-thread.md"
+        markdownFile = "java-thread.md"
     ),
 
     Blog(
         "es6",
         "2019-12-09",
         tags = listOf("es6"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/es6.md"
+        markdownFile = "es6.md"
     ),
     Blog(
         "this-in-javascript",
         "2019-12-09",
         tags = listOf("es6"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/this-in-javascript.md"
+        markdownFile = "this-in-javascript.md"
     ),
     Blog(
         "functional-programming-in-javascript",
         "2019-12-05",
         tags = listOf("es6"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/functional-programming-in-javascript.md"
+        markdownFile = "functional-programming-in-javascript.md"
     ),
     Blog(
         "centos7",
         "2019-11-28",
         tags = listOf("linux"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/centos7.md"
+        markdownFile = "centos7.md"
     ),
     Blog(
         "canal",
         "2019-11-20",
         tags = listOf("canal"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/canal.md"
+        markdownFile = "canal.md"
     ),
     Blog(
         "curl",
         "2019-11-20",
         tags = listOf("linux"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/curl.md"
+        markdownFile = "curl.md"
     ),
     Blog(
         "ssh",
         "2019-11-10",
         tags = listOf("linux"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/ssh.md"
+        markdownFile = "ssh.md"
     ),
     Blog(
         "debian",
         "2019-10-09",
         tags = listOf("linux"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/debian.md"
+        markdownFile = "debian.md"
     ),
     Blog(
         "manjaro",
         "2019-09-20",
         tags = listOf("linux"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/manjaro.md"
+        markdownFile = "manjaro.md"
     ),
     Blog(
         "nacos",
         "2019-08-19",
         tags = listOf("nacos"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/nacos.md"
+        markdownFile = "nacos.md"
     ),
     Blog(
         "java8",
         "2019-06-09",
         tags = listOf("java"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/tech/java8.md"
+        markdownFile = "java8.md"
     ),
 )
 var stores: ArrayList<Blog> = arrayListOf(
@@ -387,31 +386,31 @@ var stores: ArrayList<Blog> = arrayListOf(
         "断刀残雪",
         "2015-10-10",
         tags = listOf("武侠"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/store/断刀残雪.md"
+        markdownFile = "断刀残雪.md"
     ),
     Blog(
         "明月泪",
         "2015-10-09",
         tags = listOf("武侠"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/store/明月泪.md"
+        markdownFile = "明月泪.md"
     ),
     Blog(
         "温柔刀",
         "2015-09-10",
         tags = listOf("武侠"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/store/温柔刀.md"
+        markdownFile = "温柔刀.md"
     ),
     Blog(
         "长安乱",
         "2015-06-01",
         tags = listOf("武侠"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/store/长安乱.md"
+        markdownFile = "长安乱.md"
     ),
     Blog(
         "大荒",
         "2014-09-10",
         tags = listOf("武侠"),
-        contentUrl = "https://raw.githubusercontent.com/jianchengwang/my-site/main/nuxtsite/content/store/大荒.md"
+        markdownFile = "大荒.md"
     ),
 )
 

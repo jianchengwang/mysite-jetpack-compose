@@ -79,6 +79,11 @@ dependencies {
     implementation "com.google.accompanist:accompanist-pager-indicators:0.23.0" // Pager Indicators
     implementation "androidx.compose.runtime:runtime-livedata:$compose_version"
     implementation 'com.github.jeziellago:compose-markdown:0.2.6'
+    //网络加载框架
+    implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2"
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
